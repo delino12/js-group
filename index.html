@@ -1,0 +1,84 @@
+<!-- Ama Tech Team Designed-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Express Login | Mongod</title>
+	<meta charset="utf-8" author="Ama Tech Team (ATT)">
+	<!--external scripts-->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="fonts/css/font-awesome.css">
+</head>
+<body>
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="index.php">JS Group</a>
+	    </div>
+
+	    <div id="navbar" class="navbar-collapse collapse">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="account/"><i class="fa fa-edit"></i> Create Account</a></li>
+	        <li><a href="contact/"><i class="fa fa-volume-control-phone"></i> Contact Us</a></li>
+	      </ul>
+	    </div><!--/.nav-collapse -->
+	  </div>
+	</nav>
+	<hr /><br />
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<i class="fa fa-whatsapp"></i> Andela Whatsapp JS Development Group
+						<span class="pull-right"><i class="fa fa-location-arrow"></i></span> 
+					</div>
+					<div class="panel-body">
+						<div id="login-form-div">
+							<form method="post" onsubmit="return AuthLogin()">
+								<div class="form-group">
+									<div class="input-group">
+										<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+										<input id="username" type="text" class="form-control" name="username" placeholder="username" required="">
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="input-group">
+									    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+									    <input id="password" type="password" class="form-control" name="password" placeholder="Password" required="">
+									</div>
+								</div>
+								<div class="form-group">
+									<button class="btn btn-primary col-md-12">Login</button>
+								</div>
+							</form>
+						</div>
+						<div id="login-status"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function AuthLogin()
+		{
+			var username = $("#username").val();
+			var password = $("#password").val();
+
+			// Nodejs.....
+			
+			return false;
+		}
+	</script>
+	<!-- secondary external scripts-->
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</body>
+</html>
