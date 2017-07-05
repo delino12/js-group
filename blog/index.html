@@ -1,0 +1,172 @@
+<!-- Ama Tech Team Designed-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Express Login | Mongod</title>
+	<meta charset="utf-8" author="Ama Tech Team (ATT)">
+	<!--external scripts-->
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../fonts/css/font-awesome.css">
+</head>
+<body>
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="../index.html">JS Group</a>
+	    </div>
+
+	    <div id="navbar" class="navbar-collapse collapse">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="../account/"><i class="fa fa-edit"></i> Create Account</a></li>
+	        <li><a href="../contact/"><i class="fa fa-volume-control-phone"></i> Contact Us</a></li>
+	        <li><a href="../blog/"><i class="fa fa-volume-control-phone"></i> Blog </a></li>
+	      </ul>
+	    </div><!--/.nav-collapse -->
+	  </div>
+	</nav>
+	<hr /><br />
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<i class="fa fa-whatsapp"></i> Whatsapp JS Development Group
+						<span class="pull-right"><i class="fa fa-location-arrow"></i></span>
+					</div>
+					<div class="panel-body">
+						<div id="login-form-div">
+							<form method="post" onsubmit="return AuthLogin()">
+								<div class="form-group">
+									<label for="post-box"><i class="fa fa-envelope-open"></i> Create a post topic</label>
+										<textarea class="form-control" placeholder="create a new topic" name="post-box" id="post-box" cols="20" rows="3"></textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<ul class="list-inline">
+										<li><a href="javascript:void(0);" id="add-photo"><i class="fa fa-camera"></i> add photo</a></li>
+										<li><a href="javascript:void(0);" id="add-video"><i class="fa fa-film"></i> add video</a></li>
+										<li><a href="javascript:void(0);" id="add-file"><i class="fa fa-file"></i > add file</a></li>
+									</ul>
+									
+								</div>
+								<div class="form-group">
+									<button class="btn btn-primary col-md-12">Post</button>
+									<br /><br />
+								</div>
+							</form>
+						</div>
+						<div id="post-status"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<i class="fa fa-chat"></i>Last updated post
+						<span class="pull-right"><i class="fa fa-location-arrow"></i></span>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="list-group">
+									<li class="list-group-item active"><i class="fa fa-user"> Ade</i></li>
+									<li class="list-group-item">
+										<p>Here is a new blog post view</p>
+									</li>
+									<li class="list-group-item">
+										<ul class="list-inline">
+										<li> <a href="javascript:void(0);"> <i class="fa fa-comments"></i> 12</a></li>
+										<li> <a href="javascript:void(0);"> <i class="fa fa-facebook"></i> 148</a></li>
+										<li> <a href="javascript:void(0);"> <i class="fa fa-twitter"></i> 10</a></li>
+										<li> <a href="javascript:void(0);"> <i class="fa fa-instagram"></i> 3</a></li>
+										<li> <a href="javascript:void(0);"> <i class="fa fa-whatsapp"></i> 2</a></li>
+										</ul>
+									</li>
+								</ul>
+								<ul class="list-group">
+									<li class="list-group-item active"><i class="fa fa-user"> Genius</i></li>
+									<li class="list-group-item">
+										<p>Because you told me to do that.</p>
+									</li>
+									<li class="list-group-item">
+										<ul class="list-inline">
+										<li> <a href="javascript:void(0);"> <i class="fa fa-comments"></i> 23</a></li>
+										<li> <a href="javascript:void(0);"> <i class="fa fa-facebook"></i> 88</a></li>
+										<li> <a href="javascript:void(0);"> <i class="fa fa-twitter"></i> 10</a></li>
+										<li> <a href="javascript:void(0);"> <i class="fa fa-instagram"></i> 3</a></li>
+										<li> <a href="javascript:void(0);"> <i class="fa fa-whatsapp"></i> 2</a></li>
+										</ul>
+									</li>
+								</ul>
+								<ul class="list-group">
+									<li class="list-group-item active"><i class="fa fa-user"> Mac</i></li>
+									<li class="list-group-item">
+										<p>What's next</p>
+									</li>
+									<li class="list-group-item">
+										<ul class="list-inline">
+										<li> <a href="javascript:void(0);"> <i class="fa fa-comments"></i> 4</a></li>
+										<li> <a href="javascript:void(0);"> <i class="fa fa-facebook"></i> 68</a></li>
+										<li> <a href="javascript:void(0);"> <i class="fa fa-twitter"></i> 10</a></li>
+										<li> <a href="javascript:void(0);"> <i class="fa fa-instagram"></i> 3</a></li>
+										<li> <a href="javascript:void(0);"> <i class="fa fa-whatsapp"></i> 2</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<i class="fa fa-chat"></i> Recent Post Topics
+						<span class="pull-right"><i class="fa fa-location-arrow"></i></span>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="list-group">
+									<li class="list-group-item active"><i class="fa fa-user"> Ade</i></li>
+									<li class="list-group-item">
+										<p>Here is a new blog post view</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function AuthLogin()
+		{
+			var username = $("#username").val();
+			var password = $("#password").val();
+
+			// Nodejs.....
+
+			return false;
+		}
+	</script>
+	<!-- secondary external scripts-->
+	<script type="text/javascript" src="../js/bootstrap.js"></script>
+</body>
+</html>
