@@ -1,0 +1,29 @@
+{
+  "name": "js-group",
+  "version": "1.0.0",
+  "description": "Whatsapp JS Development Group",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delino12/js-group.git"
+  },
+  "keywords": [
+    "JS",
+    "Node",
+    "Express",
+    "MongoDB"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/delino12/js-group/issues"
+  },
+  "homepage": "https://github.com/delino12/js-group#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  }
+}
